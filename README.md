@@ -1,7 +1,7 @@
 # TwitchBotRB
 ruby twitch bot. 
 
-Go to a IRC client that is connected to irc.freenode.net (i.e. https://webchat.freenode.net/) 
+Go to a IRC client that is connected to your server, example uses irc.freenode.net (i.e. go to https://webchat.freenode.net/) 
 
 When script is running, it will simply reply to "hello". More functionality will come whenever.
 

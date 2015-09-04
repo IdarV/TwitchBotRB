@@ -1,21 +1,29 @@
 require 'cinch'
 require 'yaml'
 
-config = YAML.load_file('config.yml')
-
-
-bot = Cinch::Bot.new do
-  configure do |c|
-    c.server = config['HOST']
-	c.nick = config['NICK']
-    c.channels = ["##{config['CHANNEL']}"]
-  end
-
-  on :message, "hello" do |m|
-     m.reply "Hello, #{m.user.nick}"
-   end
+class Hello
+	include Cinch::Plugin
+	
+	match "hello"
+	
+	def execute(m)
+		m.reply("Hello from module, #{m.user.nick}")
+	end
 end
 
- bot.start
+config = YAML.load_file('config.yml')
 
- puts 'HELLO WORLD'
+bot = Cinch::Bot.new do
+	configure do |c|
+		c.server = config['HOST']
+		c.nick = config['NICK']
+		c.channels = ["##{config['CHANNEL']}"]
+		c.plugins.plugins = [Hello]
+	end
+		
+end
+
+
+
+ bot.start
+ 
