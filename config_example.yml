@@ -2,6 +2,6 @@
 # .2 FILL NEW FILE WITH THE CORRECT INFO, COPY/PASTE FROM BELOW:
 
 HOST: irc.freenode.org
-PASS: x
-NICK: idar
+#PASS: notNeededyet
+NICK: myNick
 CHANNEL: cinch-bots
