@@ -1,8 +1,9 @@
 require 'cinch'
 require 'yaml'
+require_relative './config/config.rb'
 Dir["./modules/*.rb"].each {|file| require file }
 
-config = YAML.load_file('config/config.yml')
+config = load_config
 
 bot = Cinch::Bot.new do
 	configure do |c|
