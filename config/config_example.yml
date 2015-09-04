@@ -1,0 +1,7 @@
+# .1 CREATE A FILE CALLED config.yml
+# .2 FILL NEW FILE WITH THE CORRECT INFO, COPY/PASTE FROM BELOW:
+
+HOST: irc.freenode.org
+#PASS: notNeededyet
+NICK: myNick
+CHANNEL: cinch-bots

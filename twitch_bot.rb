@@ -1,17 +1,8 @@
 require 'cinch'
 require 'yaml'
+Dir["./modules/*.rb"].each {|file| require file }
 
-class Hello
-	include Cinch::Plugin
-	
-	match "hello"
-	
-	def execute(m)
-		m.reply("Hello from module, #{m.user.nick}")
-	end
-end
-
-config = YAML.load_file('config.yml')
+config = YAML.load_file('config/config.yml')
 
 bot = Cinch::Bot.new do
 	configure do |c|
@@ -23,7 +14,5 @@ bot = Cinch::Bot.new do
 		
 end
 
-
-
- bot.start
+bot.start
  
