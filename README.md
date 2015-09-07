@@ -5,13 +5,14 @@ Go to a IRC client that is connected to your server, example uses irc.freenode.n
 
 When script is running, it will simply reply to "hello". More functionality will come whenever.
 
-This is simply a test project
+This is simply a spare-time
 # Config
 
 
 1) Install required gems
 ```
-gem install cinch
+gem install bundler
+bundle install
 ```
 2) Follow the steps in config_example.yml
 
