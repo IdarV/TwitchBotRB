@@ -1,5 +1,6 @@
 # Ignore config file.
 config/config.yml
+config/.config.yml.swp
 
 # Ignore IDEA files
 *.idea/
