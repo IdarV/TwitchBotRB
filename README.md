@@ -3,9 +3,15 @@ ruby twitch bot.
 
 Go to a IRC client that is connected to your server, example uses irc.freenode.net (i.e. go to https://webchat.freenode.net/) 
 
-When script is running, it will simply reply to "hello". More functionality will come whenever.
+The script will respond with the with the modules, whick are fairly easy to set up. Currently it restponds to / with:
 
-This is simply a spare-time
+
+```!hello``` -> ``` 'Hello from module, %USERNAME%'```
+
+
+```!google %SOMETHING%``` -> ```*GOOGLE LINK WITH SOMETHING*``` 
+
+This is simply a spare-time project.
 # Config
 
 
