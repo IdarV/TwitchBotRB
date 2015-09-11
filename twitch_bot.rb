@@ -1,5 +1,6 @@
 require 'cinch'
 require 'yaml'
+
 require_relative './config/config.rb'
 Dir['./modules/*.rb'].each {|file| require file }
 
@@ -11,7 +12,7 @@ bot = Cinch::Bot.new do
 		c.nick = config['NICK']
 		c.server = config['HOST']
 		c.channels = ["##{config['CHANNEL']}"]
-		c.plugins.plugins = [Hello, Google, TimeTeller]
+		c.plugins.plugins = [Hello, Google, TimeTeller, StreamerInfo]
 	end
 end
 

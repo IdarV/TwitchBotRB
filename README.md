@@ -11,6 +11,16 @@ The script will respond with the with the modules, whick are fairly easy to set 
 
 ```!google %SOMETHING%``` -> ```*GOOGLE LINK WITH SOMETHING*``` 
 
+
+```!time``` -> ```23:38:03```
+
+
+```!streaming %USERNAME``` -> ```%USERNAME% is streaming Counter Strike Global Offensive.```
+
+
+```!viewers %USERNAME%``` -> ```%USERNAME% has 1.125 viewers```
+
+
 This is simply a spare-time project.
 # Config
 
