@@ -12,7 +12,12 @@ class StreamerInfo
   end
 
   def viewers(m, channel_name)
-    stream = Twitch.streams.get(channel_name)
-    m.reply("#{channel_name} has #{stream.viewer_count.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1.').reverse} viewers")
+    stream = Twitch.users.get(channel_name).stream
+    m.reply(stream.nil? ? "#{channel_name} is not live, can't fetch viewers." : "#{channel_name} has #{pretty_number(stream.viewer_count)} viewers")
+  end
+
+  private
+  def pretty_number(number)
+    number.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1.').reverse
   end
 end

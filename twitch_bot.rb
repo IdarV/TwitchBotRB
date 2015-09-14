@@ -12,9 +12,8 @@ bot = Cinch::Bot.new do
 		c.nick = config['NICK']
 		c.server = config['HOST']
 		c.channels = ["##{config['CHANNEL']}"]
-		c.plugins.plugins = [Hello, Google, TimeTeller, StreamerInfo]
+		c.plugins.plugins = [Misc, StreamerInfo]
 	end
 end
 
 bot.start
- 
