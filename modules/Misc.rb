@@ -12,6 +12,6 @@ class Misc
 	end
 
 	def info(m)
-		m.reply('Helpers: !viewers, !streaming, !time, !hello, !google')
+		m.reply('Helpers: !viewers, !streaming, !topgames, !time, !hello, !google')
 	end
 end
