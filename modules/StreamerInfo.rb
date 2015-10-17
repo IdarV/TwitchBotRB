@@ -9,7 +9,7 @@ class StreamerInfo
   match /top (\W*((?i)channels(?-i))\W*)/, method: :top_channels
 
   def streaming(m, channel_name)
-    channel = Twitch.channels.get(channel_name);
+    channel = Twitch.channels.get(channel_name)
     m.reply "#{channel_name} is #{channel.streaming? ? "streaming #{channel.game_name}" : 'not streaming'}."
   end
 

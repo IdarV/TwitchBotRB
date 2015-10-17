@@ -4,3 +4,6 @@ config/.config.yml.swp
 
 # Ignore IDEA files
 *.idea/
+
+# Stuff i don't want
+stopwords.txt~

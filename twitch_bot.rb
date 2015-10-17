@@ -12,7 +12,7 @@ bot = Cinch::Bot.new do
 		c.nick = config['NICK']
 		c.server = config['HOST']
 		c.channels = ["##{config['CHANNEL']}"]
-		c.plugins.plugins = [Misc, StreamerInfo]
+		c.plugins.plugins = [Misc, StreamerInfo, FirebaseHandler]
 	end
 end
 
