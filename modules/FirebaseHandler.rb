@@ -24,6 +24,7 @@ class FirebaseHandler
     firebase = Firebase::Client.new(base_uri)
     words = m.message.gsub(/\s+/m, ' ').strip.split(' ')
     for word in words
+      word.downcase!
       word.gsub!(/[^0-9A-Za-z]/, '')
       unless is_stopword(word)
         a = firebase.get(word)
